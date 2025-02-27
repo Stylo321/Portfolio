@@ -176,14 +176,18 @@ header {
     <h2 style="font-size: 40px;">Contact Me</h2>
     <p style="font-size: 20px;">Any questions or remarks? Just write me a message!</p>
     <form class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="user_name" placeholder="Enter your name" required>
+    
       <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="Enter a valid email address">
-      
+      <input type="email" id="email" name="user_email" placeholder="Enter your email" required>
+    
       <label for="message">Message</label>
-      <textarea id="message" name="message" placeholder="Enter your Message"></textarea>
-      
+      <textarea id="message" name="user_message" placeholder="Enter your Message" required></textarea>
+    
       <button type="submit">Submit</button>
     </form>
+    
     <div class="contact-info">
       <div class="info-item">
         <img src="mail1.png" alt="Email">
@@ -206,21 +210,22 @@ header {
 
 
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script>
-  (function(){
-    emailjs.init("service_lmkunco");  // Get this from your EmailJS dashboard
-  })();
-
-  document.querySelector(".contact-form").addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    emailjs.sendForm("service_lmkunco", "YOUR_TEMPLATE_ID", this)
-      .then(function(response) {
-        alert("Message sent successfully!");
-      }, function(error) {
-        alert("Failed to send message. Please try again later.");
-      });
-  });
-</script>
+  <script>
+    (function() {
+      emailjs.init("EpnCnVG26RE1pbLth");  // Your public key
+    })();
+  
+    document.querySelector(".contact-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+  
+      emailjs.sendForm("service_lmkunco", "template_cnx3bvu", this)
+        .then(function(response) {
+          alert("Message sent successfully!");
+        }, function(error) {
+          alert("Failed to send message. Please try again later.");
+        });
+    });
+  </script>
+  
 </body>
 </html>
