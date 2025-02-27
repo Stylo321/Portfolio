@@ -203,5 +203,24 @@ header {
       </div>
     </div>
   </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("service_lmkunco");  // Get this from your EmailJS dashboard
+  })();
+
+  document.querySelector(".contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    emailjs.sendForm("service_lmkunco", "YOUR_TEMPLATE_ID", this)
+      .then(function(response) {
+        alert("Message sent successfully!");
+      }, function(error) {
+        alert("Failed to send message. Please try again later.");
+      });
+  });
+</script>
 </body>
 </html>
