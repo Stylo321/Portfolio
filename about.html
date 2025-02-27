@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        /* About Page CSS */
+
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #000000;
+  background-color: #e6e6e6; 
+}
+
+
+header {
+  background: #33333300;
+  padding: 10px 0;
+}
+
+
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 6000px;
+  margin: 0 auto;
+  color: white;
+  border: 2px solid #841b1b00;
+}
+
+.navbar .logo a {
+  font-size: 1.5rem;
+  margin-left: 400px;
+  margin-right: 600px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background-color: #696969; /* Blue hover effect */
+  color: white;
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  background-color: #e6e6e6; 
+}
+
+.about-content {
+  max-width: 1200px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.about-text{
+  padding-top: 75px;
+  padding-left: 50px;
+}
+.profile-image{
+  width: 280px; /* Circle size */
+  height: 210px; /* Circle size */
+  padding-top: 120px;
+  transition: transform .9s ease; /* Smooth transition for hover effect */
+  background-image: url('Screenshot 2024-12-10 152912.png');
+  background-size: cover;
+  border-radius: 50%;
+}
+.profile-image img {
+  width: 300px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #22222200;
+  
+}
+
+.about-text h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.about-text h2 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-top: 10px;
+}
+
+.about-text p {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 15px;
+}
+
+    </style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="logo">
+          <a href="home.html"></a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+</header>
+
+  <!-- About Me Section -->
+  <section class="about-section">
+    <div class="about-content">
+      <div class="profile-image">
+        <img src="#" alt="">
+      </div>
+      <div class="about-text">
+        
+        <h1 style="font-size: 50px;">About Me</h1>
+        <p>
+          ​​I am Silo, a dedicated and passionate individual currently advancing my studies in software development. With a deep interest in technology and its potential to drive meaningful change, I am committed to leveraging my skills to create impactful solutions. Through completing multiple projects, I have honed my coding, problem-solving, and application development abilities. These experiences have equipped me with a strong technical foundation and a practical understanding of turning innovative ideas into tangible results. I am actively seeking internship opportunities to further refine my expertise and contribute to real-world projects. Additionally, I am collaborating with professionals across various fields to broaden my knowledge, enhance my adaptability, and gain valuable industry experience. My vision is to continuously expand my skill set, stay at the forefront of emerging technologies, and contribute to projects that make a significant impact.
+        </p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
